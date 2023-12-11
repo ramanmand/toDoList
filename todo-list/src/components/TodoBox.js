@@ -3,7 +3,7 @@ import { TodoForm } from "./TodoForm";
 
 export const TodoBox = () => {
   return (
-    <div>
+    <div className= "TodoBox">
       <TodoForm />
     </div>
   )
