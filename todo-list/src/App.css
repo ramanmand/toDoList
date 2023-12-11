@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #8758ff;
+  background: #E7DBCC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .TodoBox {
-  background: #1A1A40;
+  background: #9CA39C;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -39,7 +39,7 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1.5px solid #E8C7C8;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -48,12 +48,12 @@ h1 {
 }
 
 .todo-input::placeholder {
-  color: #ffffff4d;
+  color: #090101e8;
 }
 
 .todo-btn {
-  background: #8758ff;
-  color: #fff;
+  background: #E8C7C8 ;
+  color: #1f0404;
   border: none;
   padding: 0.55rem;
   cursor: pointer;
@@ -63,8 +63,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
-  color: #fff;
+  background: #caabc1;
+  color: #190404;
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .incompleted {
-  color: #fff;
+  color: #f3c5c5;
   cursor: pointer;
 }
 
