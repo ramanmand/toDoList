@@ -4,13 +4,14 @@ import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 
-export cont Todo = () => {
+export const Todo = ({task}) => {
 
   return (
     <div className='Todo'>
-    <p>Task 1 </p>
+    <p> {task.task} </p>
     <div>
-
+    <FontAwesomeIcon icon={faPenToSquare} /> {/* adds pen icon to task */}
+    <FontAwesomeIcon icon={faTrash} /> {/* adds delete icon to task*/}
     </div>
     </div>
   )
