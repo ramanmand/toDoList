@@ -10,12 +10,16 @@ export const TodoBox = () => {
         setTodos([...todos, {id: uuidv4(), task:todo, completed:false, isEditing:false}])
       }
       console.log(todos); //to check if the prop parse works
+      const toggleComplete = id => {
+        setTodos(todos.map(todo => todo.id === id ? {...todo, completed: !todo.completed } : todo))
+      } // this will check if the id is equal to the parsed id
   return (
     <div className= "TodoBox">
       <h1>My To-Do List</h1>
       <TodoForm addTodo= {addTodo} /> {/*prop to parse the value*/}
       {todos.map((todo, index) => (
-        <Todo task={todo} key={index} />
+        <Todo task={todo} key={index} 
+        toggleComplete={toggleComplete} />
       ))} 
       
     </div>
